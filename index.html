@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Virtual Pet Cat</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="imgs/CatIcon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="title">>^•˕•^< Virtual Pet Cat >^•˕•^< </h1>
+        <div id="alert-box" class="alert">
+            <div id="content">
+                <h1 id="alert-icon">:)</h1>
+                <h1 id="alert-title">Title</h1>
+                <p id="message">Message</p>
+                <div class="button-container">
+                    <button id="close-button">Close</button>
+                </div>
+            </div>
+        </div>
+        <div class="cat-container">
+            <span>
+                <img id="cat" src="imgs/HappyCat.gif">
+            </span>
+            <div class="money">
+                <span>Money: $</span><span id="ammt">0</span>
+            </div>
+            <div class="button-container">
+                <button id="feed" >Feed</button>
+                <button id="play" >Play</button>
+                <button id="sleep" >Sleep</button>
+            </div>
+            <div class="status-container">
+                <h3>Wellbeing</h3>
+                <div id="health" class="stats">  
+                    <span class="status-text">Health Meter </span><span class="heart"><3</span>
+                    <div class="meter-container">
+                       <div class="meter-fill" id="health-bar"></div>
+                    </div>
+                </div>
+                <div id="mood">
+                    <div><b>Mood</b></div>   
+                    <div id="mood-text">to be determined...</div>  
+                </div>
+                <br>
+                <h3 >Stats</h3>
+                <div id="happiness" class="stats">
+                    <span class="status-text">Happiness</span><span class="smile">^•˕•^</span>
+                    <div class="meter-container-2">
+                        <div class="meter-fill" id="happiness-bar"></div>
+                    </div>
+                </div>
+                <div id="hunger" class="stats">
+                    <span class="status-text" >Hunger </span><span class="food"><*)))><</span>
+                    <div class="meter-container-2">
+                        <div class="meter-fill" id="hunger-bar"></div>
+                    </div>
+                </div>
+                <div id="energy" class="stats">
+                    <span class="status-text" >Energy </span><span class="energy">Zzz</span>
+                    <div class="meter-container-2">
+                        <div class="meter-fill" id="energy-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="pet-care">
+                <h3>Have Pet Sitter Take Care of Cat</h3>
+                <div class="hour-container">
+                    <span>1 hour</span>
+                    <span>6 hours</span>
+                    <span>12 hours</span>
+                </div> 
+
+                <div class="button-container">
+                    <button id="sitter-1h">$50</button>
+                    <button id="sitter-6h">$300</button>
+                    <button id="sitter-12h">$600</button>
+                </div>                
+            </div>
+        </div>
+        <div id="death-screen"></div>
+        <script src="script.js"></script>
+    </body>
+</html>

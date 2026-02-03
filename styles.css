@@ -1,0 +1,178 @@
+
+body {
+    background-color: lavender;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+button {
+    font-family: "Pixelify Sans", sans-serif;
+    border: none;
+    background-color:rosybrown;
+    width: 100px;
+    height: 30px;
+    font-size: 1em;
+    box-shadow: 5px 5px 5px grey;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.hour-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+button:hover{
+    background-color:rgb(143, 109, 109);
+}
+
+#title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.cat-container {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+}
+.meter-container {
+  width: 250px;
+  height: 15px;
+  background-color: darkgrey;
+  overflow: hidden;
+}
+
+.meter-container-2 {
+  width: 200px;
+  height: 15px;
+  background-color: darkgrey;
+  overflow: hidden;
+}
+
+.stats {
+    margin: 15px auto;
+}
+.meter-fill {
+  height: 100%;
+  width: 100%;
+  background-color: #4CAF50;
+  transition: width 0.4s ease-in-out; 
+}
+
+.health-text {
+    display: flex;
+    gap: 10px;
+}
+
+.jacquard-24-regular {
+  font-family: "Jacquard 24", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+#title {
+    font-family: "Jacquard 24", sans-serif;
+    font-weight: normal;
+}
+
+.energy {
+    font-family: "Jacquard 24";
+    padding: 5px;
+}
+
+.heart {
+    padding: 5px;
+}
+
+.smile {
+    font-weight: bold;
+    padding: 5px;
+}
+
+.food {
+    font-weight: bold;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.alert {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 1;
+  text-align: center;
+}
+
+#content > #message {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 18px;
+  padding: 10px;
+  z-index: 2;
+  text-align: left;
+}
+#content > #alert-title {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+#content {
+  background-color: #ffffff;
+  margin: 5rem auto;
+  padding: 2rem;
+  border: 1px solid #888;
+  width: 25rem;
+  height: 17rem;
+  padding-bottom: 1rem;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+#close-button {
+    background-color: lightgray;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#close-button:hover {
+    background-color: darkgrey;
+}
+
+#death-screen {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 10s ease;
+}
+
+#death-screen.show {
+    opacity: 1;
+    pointer-events: auto;
+}
